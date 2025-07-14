@@ -1,0 +1,505 @@
+
+:root
+{
+    --mainColor : #3ab0ff;
+}
+
+
+*{
+    text-transform: capitalize;
+    color: white;
+    border: var(--mainColor);
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans", sans-serif;
+    color: white;
+    width: 100%;
+}
+
+@keyframes rotate {
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);}
+}
+.rotateX
+{
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    position:absolute;
+margin-top: -71%;
+    margin-left: -71%;
+} 
+.rotate
+{
+    rotate : 180deg
+}
+.change_color_box
+{
+    position: fixed;
+    margin-left: -60px;
+    left: 0%;
+    top: 30%;
+    width: 60px;
+    height: 100px;
+    background-color: white;
+}
+.change_color_box .change_btn
+{
+    position: absolute;
+    padding: 15px;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    cursor: pointer;
+
+}
+.change_color_box .change_btn i
+{
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+}
+.change_color_box .colors
+{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.change_color_box .colors .color
+{
+    cursor: pointer;
+    margin-bottom: 7.5px;
+    margin-top: 7.5px;
+
+}
+.change_color_box .colors .red
+{
+    width: 20px;
+    height: 20px;
+    background-color: #ff5d55;
+    border-radius: 50%;
+}
+
+.change_color_box .colors .orange
+{
+    width: 20px;
+    height: 20px;
+    background-color: #EAA64D;
+    border-radius: 50%;
+}
+
+.change_color_box .colors .blue
+{
+    width: 20px;
+    height: 20px;
+    background-color: #3ab0ff;
+    border-radius: 50%;
+}
+.active
+{
+    margin-left: 0px;
+}
+.open_nav
+{
+    left: 0px;
+}
+.to_top
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    background-color: var(--mainColor);
+    cursor: pointer;
+}
+.to_top i
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+}
+.fa-arrow-right
+{
+    display: none;
+}
+hr
+{
+    border: 3px solid var(--mainColor);
+    position: relative;
+}
+
+.sec
+{
+
+    margin-bottom: 200px;
+    padding-bottom: 100px;
+    width: 80%;
+    margin: auto;
+    z-index: -1;
+}
+.sec_1 , .sec_2 , .sec_3
+{
+    border-bottom: 3px solid var(--mainColor);
+}
+.sec section
+{
+    margin: auto;
+    width: 90%;
+}
+.sec .header
+{
+    border-left: 3px solid var(--mainColor);
+    padding-left: 15px;
+    padding-bottom: 0;
+}
+.sec .header h1 
+{
+    margin-bottom: 10px;
+}
+.sec .header h4
+{
+    margin-top: 0;
+}
+.sec .header h3
+{
+    text-transform: uppercase;
+}
+nav
+{
+background-color: var(--mainColor);
+z-index: 1;
+position: fixed;
+    top: 0%;
+    width: 100%;
+
+}
+nav ul 
+{
+display: flex;
+list-style-type: none;
+padding: 20px;
+margin: 0;
+width: 80%;
+margin: auto;
+}
+
+nav ul li 
+{
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 50px;
+}
+nav ul i 
+{
+    display: none;
+}
+/* =========================SEC1============================== */
+.sec_1
+{
+    position: relative;
+    /* margin-top: -75px; */
+}
+.sec_1 .home
+{
+position: relative;
+
+}
+.sec_1 .home div
+{
+margin-top: 80px;
+
+}
+.sec_1 .home div pre 
+{
+    text-align: center;
+    font-size: 30px;
+    margin-top: -30px;
+}
+.sec_1 .home img 
+{
+    height: 400px;
+    width :400px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+
+}
+
+/*=========================SEC2==========================*/
+
+.sec_2 .info
+{
+    font-size: 17px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.sec_2 .personal_info .line
+{
+
+    padding: 15px 35px 15px 0px;
+    border-left: 4px solid var(--mainColor);
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 19px;
+    text-align: left;
+}
+.sec_2 .personal_info .line span 
+{
+text-align: left;
+
+}
+.sec_2 .personal_info .line .left_side
+{
+    width: 50%;
+    text-align: left;
+    margin-left: 15px;
+    
+}
+.sec_2 .personal_info .line .right_side
+{
+    margin-left: 30px;
+    width: 50%;
+    text-align: left;
+    
+}
+.sec_2 .personal_info .line5 .right_side
+{
+text-transform: none;
+
+}
+/*==========================Section3=========================*/
+
+.sec_3 .skills_container
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.sec_3 .skills_container .skill
+{
+    height: 100px;
+    width: 100px;
+    padding: 50px;
+    margin: 30px;
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    position: relative;
+}
+.sec_3 .skills_container .skill p
+{
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    
+}
+
+
+/*=======================Section4============================*/
+.sec_4 .header
+{
+    margin-bottom: 40px;
+}
+.sec_4 .info
+{
+    display: flex;
+    justify-content: space-between;
+}
+.sec_4 .info .right_side
+{
+    display: flex;
+}
+.sec_4 .info .right_side .social
+{
+height: 150px;
+width: 150px;
+background-color: var(--mainColor);
+border-radius: 50%;
+position: relative;
+margin-right: 25px;
+}
+.sec_4 .info .right_side
+{
+cursor: pointer;
+}
+.sec_4 .info .right_side .social .fa-brands
+{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+}
+
+.sec_4 .info .left_side .personal_info
+{
+    border-left: 3px solid var(--mainColor);
+    padding-left: 17px;
+}
+.sec_4 .info .left_side .personal_info
+{
+    margin-bottom: 15px;
+}
+.sec_4 .info .left_side .personal_info h3
+{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.sec_4 .info .left_side .personal_info h5
+{
+    margin: 0;
+}
+.sec_4 .footer
+{
+    margin-top: 50px;
+}
+/*===================================Responsive=======================================*/
+
+@media (max-width : 1000px) {
+
+.sec_4 .info .right_side .social
+{
+    width: 100px;
+    height: 100px;
+}
+.sec_4 .info .right_side .social .fa-brands
+{
+    font-size: 40px;
+}
+
+}
+@media (max-width: 790px) {
+nav ul {
+    margin: 0; 
+}
+nav ul li 
+{
+    font-size: 20px;
+}
+}
+@media (max-width : 750px) {
+    .sec_4 .info 
+    {
+        
+        flex-direction: column;
+    }
+    .sec_4 .info  .right_side
+    {
+margin-top: 40px;
+    }
+}
+
+@media (max-width: 450px) 
+{
+    .sec_4 .info
+    {
+        flex-direction: column;
+    }
+    .sec_4 .info .right_side
+    {
+        margin-top: 30px;
+    }
+    .sec_4 .info .right_side .social
+    {
+        width: 100px;
+        height: 100px;
+    }
+.sec_4 .info .right_side .social .fa-brands
+    {
+        font-size: 40px;
+    }
+}
+@media (max-width:750px) 
+{
+    .sec_3 .skills_container .skill
+    {
+        width: 75px;
+        height: 75px;
+    }
+    
+}
+@media (max-width: 580px) {
+    nav
+    {
+        width: fit-content;
+        height: fit-content;
+        margin-top: 0px;
+        
+    }
+nav ul {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: absolute;
+    background-color: var(--mainColor);
+    left: -142px;
+}
+nav ul li 
+{
+    margin-left: 0px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+nav ul i 
+{
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    background-color: var(--mainColor);
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+}
+.sec_1 .home img
+{
+height: 200px;
+width: 200px;
+
+}
+
+}
+@media (max-width:1050px) 
+{
+    .to_top
+    {
+        left: 90%;
+    }
+    
+}
+@media (max-width:600px) 
+{
+    .to_top
+    {
+        left: 85%;
+    }
+    
+}
